@@ -5,47 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-backgroud">
       <nav>
-        <a href="web-studio"> WebStudio </a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="contacts">Контакты</a></li>
+        <a class="logo-accent link" href="web-studio">
+          <span class="accent-color">Web</span>Studio
+        </a>
+        <ul class="list">
+          <li>
+            <a class="link navigation-link" href="./index.html">Студия</a>
+          </li>
+          <li>
+            <a class="link navigation-link link-current" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="link navigation-link" href="contacts">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="list">
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link list-contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
         <li>
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link list-contact" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
       </ul>
     </header>
 
-    <main>
+    <main class="main-background">
       <section>
-        <h1>Портфолио</h1>
-        <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайты</button></li>
-          <li><button type="button">Приложения</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+        <h1 class="page-title visually-hidden">Портфолио</h1>
+        <ul class="list">
+          <li><button class="button-portfolio" type="button">Все</button></li>
+          <li>
+            <button class="button-portfolio" type="button">Веб-сайты</button>
+          </li>
+          <li>
+            <button class="button-portfolio" type="button">Приложения</button>
+          </li>
+          <li>
+            <button class="button-portfolio" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="button-portfolio" type="button">Маркетинг</button>
+          </li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
             <img src="./images/img21.jpg" alt="Веб-сайт" width="370" />
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
+            <h2 class="portfolio-title">Технокряк</h2>
+            <p class="portfolio-title-text">Веб-сайт</p>
           </li>
           <li>
             <img src="./images/img22.jpg" alt="Дизайн постера" width="370" />
-            <h2 lang="en">Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
+            <h2 class="portfolio-title" lang="en">
+              Постер New Orlean vs Golden Star
+            </h2>
+            <p class="portfolio-title-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -53,8 +85,8 @@
               alt="Приложение ресторана"
               width="370"
             />
-            <h2 lang="en">Ресторан Seafood</h2>
-            <p>Приложение</p>
+            <h2 class="portfolio-title" lang="en">Ресторан Seafood</h2>
+            <p class="portfolio-title-text">Приложение</p>
           </li>
           <li>
             <img
@@ -62,8 +94,8 @@
               alt="Маркетинг проекта наушники"
               width="370"
             />
-            <h2 lang="en">Проект Prime</h2>
-            <p>Маркетинг</p>
+            <h2 class="portfolio-title" lang="en">Проект Prime</h2>
+            <p class="portfolio-title-text">Маркетинг</p>
           </li>
 
           <li>
@@ -72,8 +104,8 @@
               alt="Приложение проекта коробки"
               width="370"
             />
-            <h2 lang="en">Проект Boxes</h2>
-            <p>Приложение</p>
+            <h2 class="portfolio-title" lang="en">Проект Boxes</h2>
+            <p portfolio-title-text>Приложение</p>
           </li>
           <li>
             <img
@@ -81,13 +113,15 @@
               alt="Веб-сайт вдохновения "
               width="370"
             />
-            <h2 lang="en">Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
+            <h2 class="portfolio-title" lang="en">
+              Inspiration has no Borders
+            </h2>
+            <p class="portfolio-title-text">Веб-сайт</p>
           </li>
           <li>
             <img src="./images/img27.jpg" alt="Дизайн издания" width="370" />
-            <h2 lang="en">Издание Limited Edition</h2>
-            <p>Дизайн</p>
+            <h2 class="portfolio-title" lang="en">Издание Limited Edition</h2>
+            <p class="portfolio-title-text">Дизайн</p>
           </li>
           <li>
             <img
@@ -95,8 +129,8 @@
               alt="Маркетинг проекта лаб"
               width="370"
             />
-            <h2 lang="en">Проект LAB</h2>
-            <p>Маркетинг</p>
+            <h2 class="portfolio-title" lang="en">Проект LAB</h2>
+            <p class="portfolio-title-text">Маркетинг</p>
           </li>
           <li>
             <img
@@ -104,18 +138,21 @@
               alt="Приложение растущего бизнеса"
               width="370"
             />
-            <h2 lang="en">Growing Business</h2>
-            <p>Приложение</p>
+            <h2 class="portfolio-title" lang="en">Growing Business</h2>
+            <p class="portfolio-title-text">Приложение</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="web-studio"> WebStudio </a>
-      <address>
-        <ul>
+    <footer class="dark-background">
+      <a class="link logo-accent second-logo-accent" href="web-studio">
+        <span class="accent-color">Web</span> Studio
+      </a>
+      <address class="address">
+        <ul class="list">
           <li>
             <a
+              class="link dark-bg-text"
               href="https://goo.gl/maps/19a7avuNTJ5x7kLF8"
               target="_blank"
               rel="noopener noreferrer"
@@ -124,10 +161,18 @@
             </a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a
+              class="link dark-bg-text accent-text-color"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a
+              class="link dark-bg-text accent-text-color"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
